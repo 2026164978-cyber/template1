@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An interactive to-do list application project demonstration.">
+  <title>To-Do App | Fundamentals of Computing</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg"><link rel="stylesheet" href="assets/css/style.css"><script src="assets/js/main.js" defer></script><script src="assets/js/todo.js" defer></script>
+</head>
+<body>
+  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">FC</span><span>Fundamentals of Computing</span></a><button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button><nav class="main-nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="team.html">Our Team</a><a href="videos.html">Video Gallery</a><a href="documentation.html">Documentation</a><a class="active" href="todo.html">To-Do App</a></nav></header>
+  <main>
+    <section class="page-hero"><p class="eyebrow">PROJECT DEMONSTRATION</p><h1>My To-Do List.</h1><p>A simple task manager demonstrating webpage interfaces, JavaScript interaction, and browser storage.</p></section>
+    <section class="section todo-section">
+      <div class="todo-panel">
+        <div class="todo-top"><div><p class="eyebrow">STAY ORGANIZED</p><h2>Your tasks</h2></div><span class="storage-label">● Saved in this browser</span></div>
+        <form id="taskForm" class="todo-form"><label class="sr-only" for="taskInput">New task</label><input id="taskInput" type="text" placeholder="What do you need to do?" maxlength="120" required><button class="button button-primary" type="submit">Add task +</button></form>
+        <div class="todo-stats"><span id="taskCount">0 tasks</span><span id="completedCount">0 completed</span></div>
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+        <p id="emptyMessage" class="empty-message">No tasks yet. Add your first task above.</p>
+        <button id="clearCompleted" class="text-button" type="button">Clear completed tasks</button>
+      </div>
+      <div class="explain-card"><h3>What this demonstrates</h3><p><b>Adding:</b> JavaScript reads the input and creates a task.</p><p><b>Completing:</b> A checkbox changes the task's completed status.</p><p><b>Deleting:</b> The delete control removes a task.</p><p><b>Persistence:</b> localStorage saves tasks in the browser so they remain after a refresh on the same browser and device.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© <span data-year></span> Fundamentals of Computing Team</span><span>Built by students, for learning.</span></footer>
+</body></html>
